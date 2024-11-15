@@ -103,14 +103,14 @@ function App() {
                             type="text"
                             label="First Name"
                             value={firstName}
-                            onChange={(val) => setFirstName(val)}
+                            onChange={(val) => setFirstName(val.trim())}
                             error={errorObj.firstName}
                         />
                         <TextField
                             type="text"
                             label="Last Name"
                             value={lastName}
-                            onChange={(val) => setLastName(val)}
+                            onChange={(val) => setLastName(val.trim())}
                             error={errorObj.lastName}
                         />
                     </div>
@@ -119,7 +119,7 @@ function App() {
                             type="email"
                             label="E-mail"
                             value={email}
-                            onChange={(val) => setEmail(val)}
+                            onChange={(val) => setEmail(val.trim())}
                             error={errorObj.email}
                         />
                     </div>
@@ -128,7 +128,7 @@ function App() {
                             type="password"
                             label="Password"
                             value={password}
-                            onChange={(val) => setPassword(val)}
+                            onChange={(val) => setPassword(val.trim())}
                             error={errorObj.password}
                         />
                         <div className={style.form__inputs__validation_row}>

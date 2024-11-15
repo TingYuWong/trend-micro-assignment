@@ -1,14 +1,17 @@
 import style from './App.module.css';
+
+import Checkbox from './prototypes/Checkbox';
 import Button from './prototypes/Button';
 import TextField from './prototypes/TextField';
+
 import GoogleIcon from './assets/google.svg?react';
 import FacebookIcon from './assets/facebook.svg?react';
 import BackIcon from './assets/back.svg?react';
 import ErrorIcon from './assets/error.svg?react';
+
 import isEmail from 'validator/lib/isEmail';
 
 import { useState } from 'react';
-import Checkbox from './prototypes/Checkbox';
 
 const DEFAULT_ERROR_CONFIG = {
     firstName: false,
@@ -116,7 +119,7 @@ function App() {
                     </div>
                     <div className={style.form__inputs__second_row}>
                         <TextField
-                            type="email"
+                            type="text"
                             label="E-mail"
                             value={email}
                             onChange={(val) => setEmail(val.trim())}

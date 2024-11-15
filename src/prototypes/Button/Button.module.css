@@ -1,0 +1,40 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3c71ff;
+    background-color: #3c71ff;
+    color: #fff;
+    padding: 16px 9px;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 12px;
+    width: 100%;
+    min-width: 190px;
+    height: 48px;
+}
+
+.btn:hover {
+    background-color: #3c71ff;
+    color: #fff;
+}
+
+.btn:hover path {
+    fill: #fff;
+}
+
+.btn--outline {
+    background-color: #fff;
+    color: #000;
+}
+
+.btn__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.btn__text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+}
